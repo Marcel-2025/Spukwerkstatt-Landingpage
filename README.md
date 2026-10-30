@@ -5,23 +5,21 @@
 ## Inhalt
 
 - `index.html` – responsive Startseite mit Spielmodi, FAQ, Konzeptbilder-Galerie, Entwicklungsstatus und DE/EN-Umschalter.
-- `datenschutz.html` – eigenständige, deutsch/englische **Datenschutzerklärung als Entwurf** für die statische Website.
-- `impressum.html` – eigenständiges, deutsch/englisches **Impressum als Entwurf**.
+- `datenschutz.html` – eigenständige, deutsch/englische **Datenschutzerklärung** für die statische Website.
+- `impressum.html` – Weiterleitung auf das zentrale Flondy-Impressum.
 - `styles.css` – Design, responsive Layouts, Animationen, Zugänglichkeit.
 - `app.js` – Übersetzungen, mobile Navigation, Galerie, Scroll-Effekte. Keine Tracker/externen Libraries.
 - `assets/images` – optimierte WebP-Dateien aus dem bereitgestellten Konzept-Art-Paket.
 - `assets/icons` – Favicon und Apple Touch Icon.
 
-## Vor Veröffentlichung erledigen – wichtig
+## Rechtliches und offene Punkte
 
-1. In `datenschutz.html` und `impressum.html`: `[Straße und Hausnummer]` durch **vollständige ladungsfähige Anbieteranschrift** ersetzen, nicht durch ein reines Postfach. Dasselbe gilt für die englischen Felder.
-2. In `impressum.html`: geeignete weitere schnelle Kontaktmöglichkeit sowie gegebenenfalls weitere erforderliche Angaben ergänzen.
-3. Name `Marcel Single`, Projektbezeichnung `Flondy`, Ort `88605 Meßkirch` und E-Mail `flondy.dev@gmail.com` auf Richtigkeit prüfen.
-4. Datenschutzerklärung mit dem **tatsächlich eingesetzten Hosting** abgleichen. Der Entwurf ist auf GitHub Pages ausgerichtet; GitHub Pages protokolliert laut eigenen Angaben Besucher-IP-Adressen für Sicherheitszwecke.
-5. Falls Analyse/Marketing-Cookies, Kontaktformulare, Videos mit Drittanbieter-Einbettungen, App-SDKs, Newsletter-Dienste oder zusätzliche Hosting-Dienste eingebaut werden: Datenschutzerklärung vor Live-Schaltung aktualisieren und etwaige Einwilligungen korrekt implementieren.
-6. Web-Privacy und App-Privacy sind getrennt: Nach SDK- und Datenflussanalyse des späteren Spiels die App-Datenschutzhinweise erstellen/ergänzen.
-7. Die sechs Screenshots sind **KI-generierte Konzeptgrafiken, keine echten Gameplay-Aufnahmen**. Vor dem finalen Store-Listing gegen echte Screenshots aus dem getesteten Spiel austauschen.
-8. Google Play und App Store sind als **in Vorbereitung** gekennzeichnet und nicht anklickbar. Nach Release die offiziellen URLs integrieren.
+1. Impressum: zentral unter https://flondy.github.io/app-store/impressum.html. `impressum.html` leitet nur noch dorthin weiter.
+2. `datenschutz.html` enthält die vollständigen Anbieterangaben (Marcel Single, Westenbergstraße 3, 88605 Meßkirch) und ist auf GitHub Pages ausgerichtet.
+3. Falls Analyse/Marketing-Cookies, Kontaktformulare, Videos mit Drittanbieter-Einbettungen, App-SDKs, Newsletter-Dienste oder zusätzliche Hosting-Dienste eingebaut werden: Datenschutzerklärung vor Live-Schaltung aktualisieren und etwaige Einwilligungen korrekt implementieren.
+4. Web-Privacy und App-Privacy sind getrennt: Nach SDK- und Datenflussanalyse des späteren Spiels die App-Datenschutzhinweise erstellen/ergänzen.
+5. Die sechs Screenshots sind **KI-generierte Konzeptgrafiken, keine echten Gameplay-Aufnahmen**. Vor dem finalen Store-Listing gegen echte Screenshots aus dem getesteten Spiel austauschen.
+6. Google Play und App Store sind als **in Vorbereitung** gekennzeichnet und nicht anklickbar. Nach Release die offiziellen URLs integrieren.
 9. Optional: echte Domain und absolute `og:image`-URL ergänzen, Search-Console/Sitemap erst nach Veröffentlichung.
 
 Die bereitgestellte statische Seite selbst lädt keine externen Schriften, Tracker, Analytics oder Cookies und verwendet keine Browser-Speicherung. Sprachumschaltung per `?lang=en` / `?lang` (DE). Externe Links auf Rechtsquellen werden erst beim bewussten Klicken geöffnet.
