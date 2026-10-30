@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090815">
+  <meta name="description" content="Spukwerkstatt: Fünf kleine Halloween-Spiele, eine magische Werkstatt. Entdecke Zauberkämpfe, Kürbis-Physik, Geister-Kombos, Gruft-Rätsel und eine rasante Überlebensarena. In Entwicklung für Android und iOS.">
+  <meta property="og:type" content="website"><meta property="og:title" content="Spukwerkstatt – Fünf Spiele. Eine magische Werkstatt.">
+  <meta property="og:description" content="Fünf originelle Halloween-Minispiele voller Magie, Rätsel und Action. In Entwicklung für Android & iOS.">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <title>Spukwerkstatt · Fünf Spiele, eine magische Werkstatt</title>
+</head>
+<body data-page="home">
+<a class="skip" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+<div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+<div class="site-noise" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="./" aria-label="Spukwerkstatt – Startseite">
+      <img src="assets/images/icon.webp" alt="" width="46" height="46"><span class="brand-copy"><strong>SPUK<span>WERKSTATT</span></strong><small>FLONDY GAME STUDIO</small></span>
+    </a>
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
+      <a href="#games" data-i18n="navGames">Spielmodi</a><a href="#features" data-i18n="navFeatures">Features</a><a href="#gallery" data-i18n="navGallery">Galerie</a><a href="#faq" data-i18n="navFaq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" aria-label="Language / Sprache"><button class="lang-btn active" type="button" data-lang="de" aria-pressed="true">DE</button><span aria-hidden="true">/</span><button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button></div>
+      <a class="header-cta" href="#download"><span class="status-dot"></span><span data-i18n="navStatus">In Entwicklung</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav" type="button"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div><div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="heroEyebrow">DEINE PORTALREISE BEGINNT HIER</span><span class="eyebrow-line"></span></div>
+        <h1 id="heroTitle"><span data-i18n="heroHeading1">Fünf Spiele.</span><br><em data-i18n="heroHeading2">Ein magischer</em><br><span data-i18n="heroHeading3">Gruselspaß.</span></h1>
+        <p class="hero-lead" data-i18n="heroDescription">Zaubern, zerstören, Geister fangen, Rätsel knacken und 90 Sekunden Chaos überleben. Willkommen in der Spukwerkstatt!</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#games"><span data-i18n="discoverGames">Spielmodi entdecken</span><span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#gallery"><span class="play-triangle">▶</span><span data-i18n="viewGallery">Bilder ansehen</span></a></div>
+        <div class="micro-note"><span class="micro-dot"></span><span data-i18n="heroNote">Für Android & iOS geplant · derzeit in Entwicklung</span></div>
+      </div>
+      <div class="hero-visual reveal" style="--delay:120ms">
+        <div class="hero-art-frame"><img src="assets/images/hero.webp" alt="Konzeptillustration zu Spukwerkstatt mit Hexe, Geist, Kürbis und Skelett vor einem Spukdorf" width="1024" height="500" fetchpriority="high"><div class="hero-art-shine" aria-hidden="true"></div></div>
+        <div class="float-tag float-tag-top"><span>✦</span><span data-i18n="heroTagTop">FÜNF SPIELIDEEN</span></div>
+        <div class="float-tag float-tag-bottom"><span class="tiny-star">★</span><span data-i18n="heroTagBottom">MAGIE · ACTION · RÄTSEL</span></div>
+        <div class="hero-visual-caption" data-i18n="conceptNote">Konzeptgrafiken – keine echten Gameplay-Aufnahmen</div>
+      </div>
+    </div>
+    <div class="wrap hero-stats reveal" style="--delay:160ms">
+      <div><b>05</b><span data-i18n="statGames">SPIELMODI</span></div><div><b>04</b><span data-i18n="statElements">MAGISCHE ELEMENTE</span></div><div><b>90<span class="stat-s">s</span></b><span data-i18n="statArena">ARENA-CHALLENGE</span></div><div><b>∞</b><span data-i18n="statRuns">NEUE ANLÄUFE</span></div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>WITCHSTORM ✦ SMASH O’LANTERN ✦ GHOST WRANGLER ✦ CRYPT SHUFFLE ✦ REAPER’S DEADLINE ✦</span><span>WITCHSTORM ✦ SMASH O’LANTERN ✦ GHOST WRANGLER ✦ CRYPT SHUFFLE ✦ REAPER’S DEADLINE ✦</span></div></div>
+
+  <section class="section games-section" id="games" aria-labelledby="gamesTitle">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="gamesEyebrow">WÄHLE DEIN ABENTEUER</span></div><h2 id="gamesTitle"><span data-i18n="gamesTitle1">Fünf Spiele.</span> <span class="gradient-text" data-i18n="gamesTitle2">Fünfmal anders.</span></h2></div><p data-i18n="gamesIntro">Von magischem Dauerfeuer bis zum cleveren Gruft-Rätsel – hier hat jeder Modus seinen eigenen Zauber.</p></div>
+      <div class="game-grid">
+        <article class="game-card violet reveal" style="--delay:10ms"><div class="game-image"><img src="assets/images/witchstorm.webp" alt="Konzeptbild von Witchstorm Lite: Hexe kämpft mit violetten Zaubern gegen Skelette" loading="lazy" width="675" height="1200"><span class="game-number">01</span><span class="game-art-label" data-i18n="mockupShort">KONZEPTART</span></div><div class="game-info"><div class="game-genre" data-i18n="game1Genre">MAGIE · SURVIVOR</div><h3>Witchstorm <span>Lite</span></h3><p data-i18n="game1Description">Weiche Monsterwellen aus, sammle Seelen und verschmelze Feuer, Eis, Blitz und Wind zu gewaltigen Zaubern.</p><div class="game-footer"><span data-i18n="game1Feature">4 Elemente + Fusionen</span><span class="game-mini-arrow">↗</span></div></div></article>
+        <article class="game-card orange reveal" style="--delay:55ms"><div class="game-image"><img src="assets/images/smash.webp" alt="Konzeptbild von Smash O'Lantern: brennender Kürbis zerstört Skeletttürme" loading="lazy" width="675" height="1200"><span class="game-number">02</span><span class="game-art-label" data-i18n="mockupShort">KONZEPTART</span></div><div class="game-info"><div class="game-genre" data-i18n="game2Genre">PHYSIK · ZERSTÖRUNG</div><h3>Smash O'Lantern</h3><p data-i18n="game2Description">Ziele, schleudere und lass die Grufttürme einstürzen. Spezialkürbisse sorgen für noch mehr Chaos.</p><div class="game-footer"><span data-i18n="game2Feature">Physik + Spezialkürbisse</span><span class="game-mini-arrow">↗</span></div></div></article>
+        <article class="game-card cyan reveal" style="--delay:100ms"><div class="game-image"><img src="assets/images/ghost.webp" alt="Konzeptbild von Ghost Wrangler: bunte Geister werden mit magischen Kreisen eingefangen" loading="lazy" width="675" height="1200"><span class="game-number">03</span><span class="game-art-label" data-i18n="mockupShort">KONZEPTART</span></div><div class="game-info"><div class="game-genre" data-i18n="game3Genre">TOUCH · KOMBO</div><h3>Ghost Wrangler</h3><p data-i18n="game3Description">Zieh magische Schlingen um Geister. Fange gleiche Farben und knacke mit Kombos den Highscore.</p><div class="game-footer"><span data-i18n="game3Feature">60 Sekunden · Farbkombos</span><span class="game-mini-arrow">↗</span></div></div></article>
+        <article class="game-card mint reveal" style="--delay:40ms"><div class="game-image"><img src="assets/images/crypt.webp" alt="Konzeptbild von Crypt Shuffle: leuchtende Grabstein-Schieberätsel in grüner Gruft" loading="lazy" width="675" height="1200"><span class="game-number">04</span><span class="game-art-label" data-i18n="mockupShort">KONZEPTART</span></div><div class="game-info"><div class="game-genre" data-i18n="game4Genre">PUZZLE · GRUFT</div><h3>Crypt Shuffle</h3><p data-i18n="game4Description">Schiebe Grabsteine auf ihre Plätze, denke voraus und löse geheimnisvolle Gruft-Rätsel.</p><div class="game-footer"><span data-i18n="game4Feature">Rätsel + Rückgängig</span><span class="game-mini-arrow">↗</span></div></div></article>
+        <article class="game-card crimson reveal" style="--delay:85ms"><div class="game-image"><img src="assets/images/reaper.webp" alt="Konzeptbild von Reaper's Deadline: Kapuzengestalt überlebt Monsterwellen im roten Inferno" loading="lazy" width="675" height="1200"><span class="game-number">05</span><span class="game-art-label" data-i18n="mockupShort">KONZEPTART</span></div><div class="game-info"><div class="game-genre" data-i18n="game5Genre">ACTION · SURVIVAL</div><h3>Reaper's Deadline</h3><p data-i18n="game5Description">Nur 90 Sekunden. Doch jede Runde bringt eine neue verrückte Regel: Kürbisregen, Lava oder Turbo-Monster.</p><div class="game-footer"><span data-i18n="game5Feature">90 Sekunden · Zufallsregeln</span><span class="game-mini-arrow">↗</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section feature-section" id="features" aria-labelledby="featuresTitle">
+    <div class="wrap">
+      <div class="center-heading reveal"><div class="eyebrow center"><span class="sparkle">✦</span><span data-i18n="featureEyebrow">KLEIN IM FORMAT. GROSS IM SPASS.</span></div><h2 id="featuresTitle" data-i18n="featureTitle">Eine Werkstatt voller Überraschungen.</h2><p data-i18n="featureSubtitle">Fünf unterschiedliche Mechaniken, kurze Runden und dieses eine Gefühl: „Eine Runde noch!“</p></div>
+      <div class="features-grid">
+        <div class="feature-tile reveal"><span class="feature-symbol">✧</span><h3 data-i18n="f1Title">Magische Kombinationen</h3><p data-i18n="f1Body">Vier Elemente und mächtige Zauberfusionen in Witchstorm Lite.</p></div>
+        <div class="feature-tile reveal"><span class="feature-symbol">✹</span><h3 data-i18n="f2Title">Spiel mit Physik</h3><p data-i18n="f2Body">Jeder Kürbiswurf bringt Gebäude und Skelette anders ins Wanken.</p></div>
+        <div class="feature-tile reveal"><span class="feature-symbol">◎</span><h3 data-i18n="f3Title">Touch & Kombos</h3><p data-i18n="f3Body">Geister mit dem Finger einkreisen und Farbkombinationen meistern.</p></div>
+        <div class="feature-tile reveal"><span class="feature-symbol">⌘</span><h3 data-i18n="f4Title">Köpfchen gefragt</h3><p data-i18n="f4Body">Gruft-Rätsel mit Grabsteinen, Rückgängig-Funktion und cleveren Zügen.</p></div>
+        <div class="feature-tile reveal"><span class="feature-symbol">⏱</span><h3 data-i18n="f5Title">Schneller Nervenkitzel</h3><p data-i18n="f5Body">90-Sekunden-Challenges mit wechselnden Sonderregeln.</p></div>
+        <div class="feature-tile reveal"><span class="feature-symbol">★</span><h3 data-i18n="f6Title">Highscores & Power-ups</h3><p data-i18n="f6Body">Neue Rekorde, überraschende Boni und fünf verschiedene Spielgefühle.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery" aria-labelledby="galleryTitle">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="galleryEyebrow">EIN BLICK IN DIE WERKSTATT</span></div><h2 id="galleryTitle"><span data-i18n="galleryTitle1">Magie zum</span> <span class="gradient-text" data-i18n="galleryTitle2">Ansehen.</span></h2></div><p data-i18n="galleryDescription">Visuelle Konzept-Mockups für die fünf Spielmodi. Das fertige Gameplay kann davon abweichen.</p></div>
+      <div class="gallery-slider" id="gallerySlider" aria-label="Spielgrafiken">
+        <button type="button" class="screen-card" data-gallery="0" aria-label="Menü-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/menu.webp" alt="Konzeptbild: Spukwerkstatt Hauptmenü" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong data-i18n="galleryMenu">Hauptmenü</strong></button>
+        <button type="button" class="screen-card" data-gallery="1" aria-label="Witchstorm-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/witchstorm.webp" alt="Witchstorm Lite Konzeptbild" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong>Witchstorm Lite</strong></button>
+        <button type="button" class="screen-card" data-gallery="2" aria-label="Smash-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/smash.webp" alt="Smash O'Lantern Konzeptbild" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong>Smash O'Lantern</strong></button>
+        <button type="button" class="screen-card" data-gallery="3" aria-label="Ghost-Wrangler-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/ghost.webp" alt="Ghost Wrangler Konzeptbild" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong>Ghost Wrangler</strong></button>
+        <button type="button" class="screen-card" data-gallery="4" aria-label="Crypt-Shuffle-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/crypt.webp" alt="Crypt Shuffle Konzeptbild" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong>Crypt Shuffle</strong></button>
+        <button type="button" class="screen-card" data-gallery="5" aria-label="Reaper-Konzeptbild vergrößern"><div class="phone-frame"><img src="assets/images/reaper.webp" alt="Reaper's Deadline Konzeptbild" loading="lazy" width="675" height="1200"><span class="screen-watermark" data-i18n="mockupOverlay">KONZEPT – KEIN GAMEPLAY</span></div><strong>Reaper's Deadline</strong></button>
+      </div>
+      <div class="gallery-controls"><span class="gallery-note"><span>✦</span> <span data-i18n="galleryNote">Illustrationen sind Konzeptentwürfe, keine echten Spielaufnahmen.</span></span><div class="slider-buttons"><button type="button" id="slidePrev" aria-label="Vorheriges Bild">←</button><button type="button" id="slideNext" aria-label="Nächstes Bild">→</button></div></div>
+    </div>
+  </section>
+
+  <section class="section story-section" aria-labelledby="storyTitle">
+    <div class="wrap story-grid"><div class="story-image reveal"><img src="assets/images/hero-alt.webp" alt="Spukwerkstatt Fantasy-Konzeptkunst mit magischem Dorf, Halloween-Helden und Werkstatt" loading="lazy" width="1024" height="500"><div class="story-stamp">✦ <span data-i18n="storyStamp">MIT LIEBE ZUM SPIEL</span></div></div><div class="story-copy reveal"><div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="storyEyebrow">EIN INDIE-PROJEKT VON FLONDY</span></div><h2 id="storyTitle" data-i18n="storyTitle">Fünf kleine Ideen. Eine große Portion Fantasie.</h2><p data-i18n="storyP1">Spukwerkstatt ist aus der Idee entstanden, mehrere kompakte Spielmechaniken auszuprobieren – und die spannendsten davon in einer gemeinsamen Halloween-Welt zusammenzubringen.</p><p data-i18n="storyP2">Der Prototyp wird derzeit in Unity entwickelt. Das nächste Ziel: alles im Editor und auf echten Android- und iOS-Geräten gründlich ausprobieren, verbessern und auf Hochglanz bringen.</p><span class="story-signature">Flondy <span aria-hidden="true">✦</span></span></div></div>
+  </section>
+
+  <section class="section faq-section" id="faq" aria-labelledby="faqTitle">
+    <div class="wrap faq-grid"><div class="faq-title reveal"><div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="faqEyebrow">GUT ZU WISSEN</span></div><h2 id="faqTitle" data-i18n="faqTitle">Noch Fragen, kleiner Geist?</h2><p data-i18n="faqLead">Hier findest du Antworten rund um die Werkstatt.</p></div><div class="faq-list reveal">
+      <details><summary data-i18n="q1">Ist Spukwerkstatt bereits verfügbar?</summary><p data-i18n="a1">Noch nicht. Das Unity-Projekt befindet sich in Entwicklung. Ein öffentlicher Veröffentlichungstermin steht noch nicht fest.</p></details>
+      <details><summary data-i18n="q2">Für welche Geräte ist das Spiel geplant?</summary><p data-i18n="a2">Android und iOS sind als Zielplattformen vorgesehen. Mobile Builds und Tests auf echten Geräten stehen noch aus.</p></details>
+      <details><summary data-i18n="q3">Sind die gezeigten Screenshots echtes Gameplay?</summary><p data-i18n="a3">Nein. Die Bilder auf dieser Website sind KI-generierte Konzept-Mockups und veranschaulichen die geplante visuelle Richtung. Sie sind keine Aufnahmen aus dem Unity-Spiel.</p></details>
+      <details><summary data-i18n="q4">Sind alle fünf Spiele miteinander verbunden?</summary><p data-i18n="a4">Die fünf Modi sind als eigenständige kleine Spiele innerhalb einer gemeinsamen Sammlung konzipiert, jeweils mit eigener Steuerung und Spielmechanik.</p></details>
+      <details><summary data-i18n="q5">Kann ich Feedback oder Ideen schicken?</summary><p data-i18n="a5">Ja, gerne! Nutze die Kontaktadresse im Footer. Bitte sende keine sensiblen persönlichen Daten mit.</p></details>
+    </div></div>
+  </section>
+
+  <section class="download-section" id="download" aria-labelledby="downloadTitle"><div class="wrap download-inner reveal"><div class="download-ornament" aria-hidden="true">✦</div><img class="download-icon" src="assets/images/icon.webp" width="130" height="130" alt="Spukwerkstatt App-Icon mit magischem Kürbis"><div class="download-copy"><div class="eyebrow"><span class="sparkle">✦</span><span data-i18n="downloadEyebrow">DAS ABENTEUER ENTSTEHT GERADE</span></div><h2 id="downloadTitle" data-i18n="downloadTitle">Die Werkstatt öffnet bald ihre Türen.</h2><p data-i18n="downloadDesc">Android & iOS sind geplant. Sobald eine spielbare Version veröffentlicht ist, findest du hier die offiziellen Downloadlinks.</p><div class="store-row"><span class="store-pill" aria-label="Google Play geplant"><span>▶</span><span><small data-i18n="comingSoon">IN VORBEREITUNG</small><strong>Google Play</strong></span></span><span class="store-pill" aria-label="App Store geplant"><span>✦</span><span><small data-i18n="comingSoon">IN VORBEREITUNG</small><strong>App Store</strong></span></span></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-top"><div><a href="./" class="footer-brand"><img src="assets/images/icon.webp" alt="" width="38" height="38"><strong>SPUKWERKSTATT</strong></a><p data-i18n="footerTagline">Fünf Spiele. Eine magische Werkstatt.<br>Ein unabhängiges Projekt von Flondy.</p></div><div class="footer-links"><strong data-i18n="footerExplore">ENTDECKEN</strong><a href="#games" data-i18n="navGames">Spielmodi</a><a href="#gallery" data-i18n="navGallery">Galerie</a><a href="#faq">FAQ</a></div><div class="footer-links"><strong data-i18n="footerLegal">RECHTLICHES</strong><a href="datenschutz.html" data-legal-link data-i18n="privacy">Datenschutz</a><a href="impressum.html" data-legal-link data-i18n="imprint">Impressum</a><a href="mailto:flondy.dev@gmail.com" data-i18n="contact">Kontakt</a></div></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> Flondy · Spukwerkstatt.</span><span data-i18n="footerDisclaimer">Konzeptgrafiken ≠ echtes Gameplay · In Entwicklung</span><a href="#top" class="back-top" aria-label="Nach oben">↑</a></div></footer>
+<dialog class="lightbox" id="lightbox" aria-label="Vergrößerte Konzeptillustration"><button type="button" class="lightbox-close" id="lightboxClose" aria-label="Schließen">×</button><button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Vorheriges Bild">‹</button><img src="assets/images/menu.webp" id="lightboxImage" alt="Konzeptillustration"><button type="button" class="lightbox-next" id="lightboxNext" aria-label="Nächstes Bild">›</button><div class="lightbox-caption" id="lightboxCaption">Konzept – kein Gameplay</div></dialog>
+</body>
+</html>
